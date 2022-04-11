@@ -12,10 +12,13 @@
 
   <body>
 
+  <div class="container">
     <%= yield %>
 
     <% if user_signed_in? %>
-      <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+      <%= button_to "logout", destroy_user_session_path, method: :delete, class: "btn btn-dark"  %>
     <% end%>
+  </div>
+
   </body>
 </html>

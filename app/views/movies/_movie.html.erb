@@ -1,12 +1,11 @@
-<div id="<%= dom_id movie %>">
-  <p>
-    <strong>Name:</strong>
+<tr id="<%= dom_id movie %>">
+  <td>
     <%= movie.name %>
-  </p>
-
-  <p>
-    <strong>Price:</strong>
+  </td>
+  <td>
     <%= movie.price %>
-  </p>
-
-</div>
+  </td>
+  <td>
+    <%= link_to "Show this movie", movie %>
+  </td>
+</tr>
